@@ -1,3 +1,16 @@
+---
+title: Home
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>{{ "Hello World!" | downcase }}</h1>
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Spikatrix/testpage/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
@@ -35,3 +48,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+</body>
+</html>
