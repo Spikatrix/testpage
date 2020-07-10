@@ -1,3 +1,4 @@
+<!--
 ---
 title: Home
 ---
@@ -9,7 +10,7 @@ title: Home
 3) {{page.title}}
 4) {{ page.title}}
 5) {{  page.title  }}
-
+-->
 
 ## Welcome to GitHub Pages
 
