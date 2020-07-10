@@ -1,14 +1,14 @@
 ---
 title: Home
 ---
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <h1>{{ "Hello World!" | downcase }}</h1>
+
+{{ "Hello World!" | downcase }}
+
+1) {{ page.title }}
+2) {{page.title }}
+3) {{page.title}}
+4) {{ page.title}}
+5) {{  page.title  }}
 
 
 ## Welcome to GitHub Pages
