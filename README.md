@@ -1,15 +1,3 @@
----
-title: Home
----
-
-{{ "Hello World!" | downcase }}
-
-1) {{ page.title }}
-2) {{page.title }}
-3) {{page.title}}
-4) {{ page.title}}
-5) {{  page.title  }}
-
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Spikatrix/testpage/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
