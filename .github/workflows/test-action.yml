@@ -1,0 +1,38 @@
+name: Test action
+
+# Controls when the action will run
+on:
+  push:
+    branches:
+      - test
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # Workflows
+  test_workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout test branch
+      uses: actions/checkout@v2
+        
+    - name: Cleanup previous tags and releases
+      uses: dev-drprasad/delete-tag-and-release@v0.1.2
+      with:
+        delete_release: true
+        tag_name: v-test
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Create a test release
+      uses: Spikatrix/upload-release-action@1c2f8bad86a6ba94d5f3cc11aacf419fa0215f75
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: CNAME
+        tag: v-test
+        overwrite: true
+        prerelease: true
+        target_commit: test
+        release_name: "Test release name"
+        body: "Test body"
+        
