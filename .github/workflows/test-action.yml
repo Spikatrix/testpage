@@ -25,7 +25,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Create a test release
-      uses: Spikatrix/upload-release-action@1c2f8bad86a6ba94d5f3cc11aacf419fa0215f75
+      uses: Spikatrix/upload-release-action@master
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: CNAME
