@@ -32,7 +32,6 @@ jobs:
         tag: v-test
         overwrite: true
         prerelease: true
-        target_commit: test
         release_name: "Test release name"
         body: "Test body"
         
